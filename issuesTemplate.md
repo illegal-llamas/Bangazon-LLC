@@ -1,4 +1,4 @@
-##Issue/Feature Template
+## Issue/Feature Template
 
 #### Context
 ***
@@ -10,7 +10,7 @@
 ***
    * [A link to a ticket](link.com)
 
-####Process
+#### Process
 ***
    * Potential impact on code. Do you anticipate this causing problems with code that is already in place?
    * Suggested implementation.

@@ -1,12 +1,12 @@
 # Illegal Llamas Pull Request Template
 
-##Status
+## Status
 Is this PR ready to be looked at by other group members? 
 
-##Description
+## Description
 A description of what this PR does
 
-###Related Tickets 
+### Related Tickets 
 ***
 List all related tickets that are addressed by this pull request
 
@@ -14,7 +14,7 @@ List all related tickets that are addressed by this pull request
 
 [A link to a ticket](link.com)
 
-###Impacted Areas of the Application
+### Impacted Areas of the Application
 ***
 Files that this PR modifies or affects in some way. 
 ```
@@ -23,7 +23,7 @@ Files that this PR modifies or affects in some way.
     fileexample.sql
 ```
 
-###Deploy Notes
+### Deploy Notes
 ***
 Anything that a user needs to know in order to deploy/properly test this branch. Provide step by step instructions that address any db migrations, packages needed, ect. Be as specific as possible in your instructions
 
