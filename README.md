@@ -1,4 +1,4 @@
-# Banagzon-LLC
+# Bangazon-LLC
 ## Project Summary
 Bangazon, LLC provides a RESTful API, utilizing the Django REST Framework, to provide information about the following areas of the Bangazon organization.  Using our API, a client can find information about customers, products, orders, and payment types.  Additionally, information about the departments, employees, training programs, and registered computers will be available.  
 ## Steps To Install
@@ -12,3 +12,13 @@ Note: If you do not have Python installed, click this [link](https://www.python.
   * Run ```python manage.py migrate``` to sync the database.
   * Run ```python manage.py runserver``` to run the Django server.
   * Navigate to [http://localhost:8000/](http://localhost:8000/) to take advantage of the Bangazon API!
+
+## Link to Issue Board
+  * [Issues](https://github.com/illegal-llamas/Bangazon-LLC/issues)
+  
+## Contributors
+  * Nick Nash (Team Lead)
+  * Casey Daily
+  * Kayla Brewer
+  * Jordan Nelson
+  * Harper Frankstone
