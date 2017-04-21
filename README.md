@@ -18,7 +18,7 @@ Note: If you do not have Python installed, click this [link](https://www.python.
   
 ## Contributors
   * Nick Nash (Team Lead)
-  * Casey Daily
+  * Casey Dailey
   * Kayla Brewer
   * Jordan Nelson
   * Harper Frankstone
