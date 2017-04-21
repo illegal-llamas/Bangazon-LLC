@@ -5,3 +5,4 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ProductType
         exclude = ()
+
