@@ -6,3 +6,7 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
         model = ProductType
         exclude = ()
 
+class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
+	class Meta:
+		model = Orders
+		exclude = ()
