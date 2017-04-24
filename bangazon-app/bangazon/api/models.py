@@ -65,7 +65,7 @@ class EmployeeType(models.Model):
 	employeeTitle = models.CharField(max_length=100)
 	employeePay = models.CharField(max_length=100)
 	supervisor = models.CharField(max_length=100)
-
+	customer_support = models.CharField(max_length=100)
 
 class ComputerType(models.Model):
 	'''author: Nick Nash
