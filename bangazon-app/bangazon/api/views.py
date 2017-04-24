@@ -101,4 +101,4 @@ class CustomerSupportViewSet(viewsets.ModelViewSet):
     by mixing in the behavior of the various mixin classes.
     """
     queryset = CustomerSupport.objects.all()
-    serializers_class = CustomerSupportSerializer
+    serializer_class = CustomerSupportSerializer
