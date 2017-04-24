@@ -9,3 +9,10 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = ProductType.objects.all()
     serializer_class = ProductTypeSerializer
+
+class EmployeeTypeViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = EmployeeType.objects.all()
+    serializer_class = EmployeeTypeSerializer
