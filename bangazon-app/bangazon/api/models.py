@@ -11,3 +11,7 @@ class EmployeeType(models.Model):
 	employeeTitle = models.CharField(max_length=100)
 	employeePay = models.CharField(max_length=100)
 	supervisor = models.CharField(max_length=100)
+
+class ComputerType(models.Model):
+	computerPurchaseDate = models.CharField(max_length=50)
+	computerDecomissionDate = models.CharField(max_length=50)
