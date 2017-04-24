@@ -16,3 +16,10 @@ class OrdersViewSet(viewsets.ModelViewSet):
 	"""
 	queryset = Orders.objects.all()
 	serializer_class = OrdersTypeSerializer
+
+class DepartmentViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows departments to be viewed or edited.
+    """
+    queryset = Department.objects.all()
+    serializer_class = DepartmentSerializer

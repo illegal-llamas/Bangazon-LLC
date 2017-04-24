@@ -5,5 +5,10 @@ class ProductType(models.Model):
 	producttypename = models.CharField(max_length=100)
 
 class Orders(models.Model):
-	customerid = models.CharField(max_length=100)
-	paymenttypeid = models.CharField(max_length=100)
+	# customerId = models.ForeignKey(Customer)
+	# paymentTypeId = models.ForeignKey(PaymentType)
+	pass 
+
+class Department(models.Model):
+	departmentName = models.CharField(max_length=100)
+	departmentBudget = models.IntegerField()

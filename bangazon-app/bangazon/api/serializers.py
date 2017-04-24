@@ -10,3 +10,8 @@ class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Orders
 		exclude = ()
+
+class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
+	class Meta:
+		model = Department
+		exclude = ()
