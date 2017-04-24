@@ -5,5 +5,5 @@ class ProductType(models.Model):
 	producttypename = models.CharField(max_length=100)
 
 class Orders(models.Model):
-	# customerid = model.ForeignKey(Customer)
-	# paymenttypeid = models.ForeignKey(PaymentType)
+	customerid = models.CharField(max_length=100)
+	paymenttypeid = models.CharField(max_length=100)
