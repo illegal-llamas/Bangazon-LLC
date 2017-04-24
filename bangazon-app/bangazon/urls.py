@@ -7,6 +7,7 @@ router = routers.DefaultRouter()
 router.register(r'producttypes', views.ProductTypeViewSet)
 router.register(r'employeetypes', views.EmployeeTypeViewSet)
 router.register(r'computers', views.ComputerTypeViewSet)
+router.register(r'products', views.ProductViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

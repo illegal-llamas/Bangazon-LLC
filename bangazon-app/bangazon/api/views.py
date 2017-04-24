@@ -23,3 +23,10 @@ class ComputerTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerType.objects.all()
     serializer_class = ComputerTypeSerializer
+
+class ProductViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows computers to be viewed or edited
+    """
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer 
