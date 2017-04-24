@@ -20,6 +20,7 @@ router.register(r'employeetypes', views.EmployeeTypeViewSet)
 router.register(r'customer', views.CustomerViewSet)
 router.register(r'computers', views.ComputerTypeViewSet)
 router.register(r'products', views.ProductViewSet)
+router.register(r'trainingprograms', views.TrainingProgramsViewSet)
 
 
 
