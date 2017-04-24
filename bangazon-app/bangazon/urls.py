@@ -5,8 +5,12 @@ from django.contrib import admin
 
 router = routers.DefaultRouter()
 router.register(r'producttypes', views.ProductTypeViewSet)
+router.register(r'orders', views.OrdersViewSet)
+router.register(r'departments', views.DepartmentViewSet)
 router.register(r'employeetypes', views.EmployeeTypeViewSet)
 router.register(r'customer', views.CustomerViewSet)
+router.register(r'computers', views.ComputerTypeViewSet)
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
