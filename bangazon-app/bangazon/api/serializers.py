@@ -11,7 +11,13 @@ class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
         model = EmployeeType
         exclude = ()
 
-class Customer(serializers.HyperlinkedModelSerializer):
+class CustomerSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    author: Kayla Brewer
+    purpose: specify model and fields to include (here we include all) from the customer table
+    args: serializers.HyperlinkedModelSerializer, see docs @ http://www.django-rest-framework.org/api-guide/serializers/#hyperlinkedmodelserializer 
+    uses hyperlinks to represent relationships, rather than primary keys.
+    """
     class Meta:
         model = Customer
         exclude = ()
