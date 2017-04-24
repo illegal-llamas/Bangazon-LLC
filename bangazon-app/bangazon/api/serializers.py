@@ -10,3 +10,8 @@ class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = EmployeeType
         exclude = ()
+
+class Customer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Customer
+        exclude = ()

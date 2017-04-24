@@ -16,3 +16,7 @@ class EmployeeTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = EmployeeType.objects.all()
     serializer_class = EmployeeTypeSerializer
+
+class CustomerViewSet(viewsets.ModelViewSet)
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer

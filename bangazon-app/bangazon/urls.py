@@ -6,6 +6,7 @@ from django.contrib import admin
 router = routers.DefaultRouter()
 router.register(r'producttypes', views.ProductTypeViewSet)
 router.register(r'employeetypes', views.EmployeeTypeViewSet)
+router.register(r'customer', views.CustomerViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
