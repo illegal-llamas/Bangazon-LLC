@@ -2,6 +2,11 @@ from django.db import models
 
 # Create your models here.
 class ProductType(models.Model):
+'''
+	Author: Jordan Nelson
+	Properties:
+	Creates table "ProductType" with the column producttypename
+'''
 	producttypename = models.CharField(max_length=100)
 
 
@@ -15,6 +20,13 @@ class Department(models.Model):
 	departmentBudget = models.IntegerField()
 
 class EmployeeType(models.Model):
+'''
+	Author: Jordan Nelson
+	Properties:
+	Creates table "EmployeeType" with a foreign key 'departmentID'
+	and columns: employeeFirstName, employeeLastName, employeeTitle, employeePay
+	and supervisor.
+'''
 #	departmentID = models.ForeignKey(Department)
 	employeeFirstName = models.CharField(max_length=100)
 	employeeLastName = models.CharField(max_length=100)
