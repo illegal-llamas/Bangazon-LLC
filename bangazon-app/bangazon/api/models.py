@@ -105,3 +105,21 @@ class TrainingPrograms(models.Model):
     startDate = models.CharField(max_length=100)
     endDate = models.CharField(max_length=100)
     maxAttendees = models.IntegerField()
+
+class CustomerSupport(models.Model):
+    """author: Nick Nash
+    purpose: defines properties associate with the customer support provided to customers with issues
+    properties: 
+    customerID=integer, associated with the foreign key from the Customer table
+    orderID=integer, associated with the foreign key from the Order table
+    ticket_description=string, associated with the specific customer's reported issue
+    date_ticket_created=string, associated with the date the customer reported the issue
+    resolution_description=string, associated with the resolved issue's description
+    date_ticket_resolved=string, associated with the date the customer's issue was resolved
+    """
+    customerID = models.ForeignKey(Customer)
+    orderID = models.ForeignKey(Orders)
+    ticket_description = models.CharField(max_length=100)
+    date_ticket_created = models.CharField(max_length=50)
+    resolution_description = models.CharField(max_length=100)
+    date_ticket_resolved = models.CharField(max_length=50)

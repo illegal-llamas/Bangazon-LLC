@@ -80,3 +80,14 @@ class TrainingProgramsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = TrainingPrograms
         exclude = ()
+
+class CustomerSupportSerializer(serializers.HyperlinkedModelSerializer):
+    """author: Nick Nash
+    purpose: extends the parent serializer class with validators specifying the model and fields to exclude (here we include all)
+    args: n/a
+    docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance
+    """
+    class Meta:
+        model = CustomerSupport
+        exclude = ()
+        

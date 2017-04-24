@@ -92,3 +92,13 @@ class TrainingProgramsViewSet(viewsets.ModelViewSet):
     """
     queryset = TrainingPrograms.objects.all()
     serializer_class = TrainingProgramsSerializer
+
+class CustomerSupportViewSet(viewsets.ModelViewSet):
+    """author: Nick Nash
+    purpose: creates a viewset class to represent the customer support table created
+    args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset 
+    The ModelViewSet class inherits from GenericAPIView and includes implementations for various actions, 
+    by mixing in the behavior of the various mixin classes.
+    """
+    queryset = CustomerSupport.objects.all()
+    serializer_class = CustomerSupportSerializer
