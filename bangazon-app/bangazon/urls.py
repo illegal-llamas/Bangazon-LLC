@@ -14,6 +14,12 @@ router = routers.DefaultRouter()
 # viewset - The viewset class
 router.register(r'producttypes', views.ProductTypeViewSet)
 router.register(r'paymenttypeinfo', views.CustomerPaymentTypeViewSet)
+router.register(r'orders', views.OrdersViewSet)
+router.register(r'departments', views.DepartmentViewSet)
+router.register(r'employeetypes', views.EmployeeTypeViewSet)
+router.register(r'customer', views.CustomerViewSet)
+router.register(r'computers', views.ComputerTypeViewSet)
+
 
 
 urlpatterns = [
