@@ -15,13 +15,13 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
 
 #view to represent customer payment type information
 class CustomerPaymentTypeViewSet(viewsets.ModelViewSet):
-    '''
+    """
     author: casey dailey
     purpose: creates a viewset class to represent custmer payment type information
     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset 
     The ModelViewSet class inherits from GenericAPIView and includes implementations for various actions, 
     by mixing in the behavior of the various mixin classes.
-    '''
+    """
     queryset = CustomerPaymentType.objects.all()
     serializer_class = CustomerPaymentTypeSerializer
 
@@ -44,17 +44,17 @@ class DepartmentViewSet(viewsets.ModelViewSet):
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer
 
-class EmployeeTypeViewSet(viewsets.ModelViewSet):
+class EmployeeViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows employees to be viewed or edited.
     Author: Jordan Nelson
     Methods: n/a
     """
-    queryset = EmployeeType.objects.all()
-    serializer_class = EmployeeTypeSerializer
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
 
 
-class CustomerViewSet(viewsets.ModelViewSet):
+class CustomersViewSet(viewsets.ModelViewSet):
     """
     author: Kayla Brewer
     purpose: creates a viewset class to represent the customer table
@@ -62,22 +62,27 @@ class CustomerViewSet(viewsets.ModelViewSet):
     The ModelViewSet class inherits from GenericAPIView and includes implementations for various actions, 
     by mixing in the behavior of the various mixin classes.
     """
-    queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
+    queryset = Customers.objects.all()
+    serializer_class = CustomersSerializer
 
     
-class ComputerTypeViewSet(viewsets.ModelViewSet):
+class ComputerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows computers to be viewed or edited
     Author: Nick Nash
     Methods: n/a
     """
-    queryset = ComputerType.objects.all()
-    serializer_class = ComputerTypeSerializer
+    queryset = Computer.objects.all()
+    serializer_class = ComputerSerializer
 
 class ProductViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows computers to be viewed or edited
+    author: Nick the Nash
+    purpose: creates a viewset class to represent the products table
+    args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset 
+    The ModelViewSet class inherits from GenericAPIView and includes implementations for various actions, 
+    by mixing in the behavior of the various mixin classes.
+
     """
     queryset = Product.objects.all()
     serializer_class = ProductSerializer 
@@ -93,12 +98,12 @@ class TrainingProgramsViewSet(viewsets.ModelViewSet):
     queryset = TrainingPrograms.objects.all()
     serializer_class = TrainingProgramsSerializer
 
-class CustomerSupportViewSet(viewsets.ModelViewSet):
-    """author: Nick Nash
-    purpose: creates a viewset class to represent the customer support table created
-    args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset 
-    The ModelViewSet class inherits from GenericAPIView and includes implementations for various actions, 
-    by mixing in the behavior of the various mixin classes.
-    """
-    queryset = CustomerSupport.objects.all()
-    serializer_class = CustomerSupportSerializer
+# class CustomerSupportViewSet(viewsets.ModelViewSet):
+#     """author: Nick Nash
+#     purpose: creates a viewset class to represent the customer support table created
+#     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset 
+#     The ModelViewSet class inherits from GenericAPIView and includes implementations for various actions, 
+#     by mixing in the behavior of the various mixin classes.
+#     """
+#     queryset = CustomerSupport.objects.all()
+#     serializer_class = CustomerSupportSerializer

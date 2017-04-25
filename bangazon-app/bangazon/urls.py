@@ -8,6 +8,7 @@ from django.contrib import admin
 #but additionally includes a default API root view, that returns a response containing hyperlinks to all the list views. 
 #It also generates routes for optional .json style format suffixes.
 router = routers.DefaultRouter()
+
 #docs: http://www.django-rest-framework.org/api-guide/routers/#usage
 #There are two mandatory arguments to the register() method:
 # prefix - The URL prefix to use for this set of routes.
@@ -16,12 +17,12 @@ router.register(r'producttypes', views.ProductTypeViewSet)
 router.register(r'paymenttypeinfo', views.CustomerPaymentTypeViewSet)
 router.register(r'orders', views.OrdersViewSet)
 router.register(r'departments', views.DepartmentViewSet)
-router.register(r'employeetypes', views.EmployeeTypeViewSet)
-router.register(r'customer', views.CustomerViewSet)
-router.register(r'computers', views.ComputerTypeViewSet)
+router.register(r'employee', views.EmployeeViewSet)
+router.register(r'customers', views.CustomersViewSet)
+router.register(r'computer', views.ComputerViewSet)
 router.register(r'products', views.ProductViewSet)
 router.register(r'trainingprograms', views.TrainingProgramsViewSet)
-router.register(r'customersupport', views.CustomerSupportViewSet)
+#router.register(r'customersupport', views.CustomerSupportViewSet)
 
 
 urlpatterns = [
