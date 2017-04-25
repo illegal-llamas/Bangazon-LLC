@@ -6,7 +6,6 @@ class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
         model = ProductType
         exclude = ()
 
-
 class CustomerPaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
     '''author: casey dailey
     purpose: specify model and fields to include (here we include all)
