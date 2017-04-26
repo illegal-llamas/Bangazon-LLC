@@ -184,6 +184,16 @@ class CustomerSupport(models.Model):
     resolution_description = models.CharField(max_length=250)
     date_ticket_resolved = models.CharField(max_length=50)
 
+class ProductOrder(models.Model):
 
+    """auth: Jordan Nelson
+    purpose: A table created for the purpose querying between the Product and Order tables
+    properties:
+    Product = Foreign Key to the table Id of the Product table
+    Order = Foreign Key to the table Id of the Order table
+    """
+
+    product = models.ForeignKey(Customer)
+    order = models.ForeignKey(Order)
 
             

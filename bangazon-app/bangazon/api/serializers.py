@@ -180,8 +180,3 @@ class CustomerSupportSerializer(serializers.HyperlinkedModelSerializer):
         """
         model = CustomerSupport
         exclude = ()
-        
-
-            
-            
-            
