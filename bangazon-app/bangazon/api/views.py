@@ -17,7 +17,7 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
 
     """
 
-    queryset = ProductType.objects.all()
+    queryset = ProductType.objects.order_by('product_type_name')
     serializer_class = ProductTypeSerializer
 
 
@@ -33,7 +33,7 @@ class CustomerPaymentTypeViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
     """
 
-    queryset = CustomerPaymentType.objects.all()
+    queryset = CustomerPaymentType.objects.order_by('payment_type_name')
     serializer_class = CustomerPaymentTypeSerializer
 
 
@@ -48,7 +48,7 @@ class OrdersViewSet(viewsets.ModelViewSet):
  
 ...."""
 
-    queryset = Orders.objects.all()
+    queryset = Orders.objects.order_by('product_name')
     serializer_class = OrdersTypeSerializer
 
 
@@ -63,11 +63,11 @@ class DepartmentViewSet(viewsets.ModelViewSet):
  
     """
 
-    queryset = Department.objects.all()
+    queryset = Department.objects.order_by('name')
     serializer_class = DepartmentSerializer
 
 
-class EmployeeTypeViewSet(viewsets.ModelViewSet):
+class EmployeeViewSet(viewsets.ModelViewSet):
 
     """
     API endpoint that allows employees to be viewed or edited.
@@ -78,8 +78,8 @@ class EmployeeTypeViewSet(viewsets.ModelViewSet):
 
     """
 
-    queryset = EmployeeType.objects.all()
-    serializer_class = EmployeeTypeSerializer
+    queryset = Employee.objects.order_by('first_name')
+    serializer_class = EmployeeSerializer
 
 
 class CustomerViewSet(viewsets.ModelViewSet):
@@ -93,11 +93,11 @@ class CustomerViewSet(viewsets.ModelViewSet):
 
     """
 
-    queryset = Customer.objects.all()
+    queryset = Customer.objects.order_by('first_name')
     serializer_class = CustomerSerializer
 
 
-class ComputerTypeViewSet(viewsets.ModelViewSet):
+class ComputerViewSet(viewsets.ModelViewSet):
 
     """
     API endpoint that allows computers to be viewed or edited
@@ -108,8 +108,8 @@ class ComputerTypeViewSet(viewsets.ModelViewSet):
  
     """
 
-    queryset = ComputerType.objects.all()
-    serializer_class = ComputerTypeSerializer
+    queryset = Computer.objects.order_by('purchase_date')
+    serializer_class = ComputerSerializer
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -123,11 +123,11 @@ class ProductViewSet(viewsets.ModelViewSet):
 
     """
 
-    queryset = Product.objects.all()
+    queryset = Product.objects.order_by('product_name')
     serializer_class = ProductSerializer
 
 
-class TrainingProgramsViewSet(viewsets.ModelViewSet):
+class TrainingProgramViewSet(viewsets.ModelViewSet):
 
     """
     author: Harper Frankstone
@@ -138,8 +138,8 @@ class TrainingProgramsViewSet(viewsets.ModelViewSet):
  
     """
 
-    queryset = TrainingPrograms.objects.all()
-    serializer_class = TrainingProgramsSerializer
+    queryset = TrainingProgram.objects.order_by('program_name')
+    serializer_class = TrainingProgramSerializer
 
 
 class CustomerSupportViewSet(viewsets.ModelViewSet):
@@ -152,9 +152,5 @@ class CustomerSupportViewSet(viewsets.ModelViewSet):
  
     """
 
-    queryset = CustomerSupport.objects.all()
+    queryset = CustomerSupport.objects.order_by('date_ticket_created')
     serializer_class = CustomerSupportSerializer
-
-
-
-            
