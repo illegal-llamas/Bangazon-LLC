@@ -17,20 +17,20 @@ router = routers.DefaultRouter()
 # prefix - The URL prefix to use for this set of routes.
 # viewset - The viewset class
 
-router.register(r'producttypes', views.ProductTypeViewSet)
-router.register(r'paymenttypeinfo', views.CustomerPaymentTypeViewSet)
-router.register(r'orders', views.OrdersViewSet)
-router.register(r'departments', views.DepartmentViewSet)
-router.register(r'employeetypes', views.EmployeeTypeViewSet)
+router.register(r'product-type', views.ProductTypeViewSet)
+router.register(r'payment-type', views.CustomerPaymentTypeViewSet)
+router.register(r'order', views.OrderViewSet)
+router.register(r'department', views.DepartmentViewSet)
+router.register(r'employee', views.EmployeeViewSet)
 router.register(r'customer', views.CustomerViewSet)
-router.register(r'computers', views.ComputerTypeViewSet)
-router.register(r'products', views.ProductViewSet)
-router.register(r'trainingprograms', views.TrainingProgramsViewSet)
-router.register(r'customersupport', views.CustomerSupportViewSet)
+router.register(r'computer', views.ComputerViewSet)
+router.register(r'product', views.ProductViewSet)
+router.register(r'training-program', views.TrainingProgramViewSet)
+router.register(r'customer-support', views.CustomerSupportViewSet)
 
 urlpatterns = [url(r'^admin/', admin.site.urls), url(r'^',
                include(router.urls)), url(r'^api-auth/',
                include('rest_framework.urls', namespace='rest_framework'
                ))]
 
-			
+            
