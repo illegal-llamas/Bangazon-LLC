@@ -78,8 +78,8 @@ class Product(models.Model):
     product_type = models.ForeignKey(ProductType)
     customer = models.ForeignKey(Customer)
     product_name = models.CharField(max_length=100)
-    product_price = models.CharField(max_length=25)
-    product_description = models.CharField(max_length=250)
+    price = models.CharField(max_length=25)
+    description = models.CharField(max_length=250)
 
     def __str__(self):
         """author: the Nick Nash
