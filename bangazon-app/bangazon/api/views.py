@@ -15,7 +15,9 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
 
     """
-    queryset = ProductType.objects.all()
+
+
+    queryset = ProductType.objects.order_by('product_type_name')
     serializer_class = ProductTypeSerializer
 
 
@@ -28,7 +30,9 @@ class CustomerPaymentTypeViewSet(viewsets.ModelViewSet):
     properties: queryset=specifies the model and query parameters
                 serializer_class=specifies the corresponding serializer
     """
-    queryset = CustomerPaymentType.objects.all()
+
+
+    queryset = CustomerPaymentType.objects.order_by('payment_type_name')
     serializer_class = CustomerPaymentTypeSerializer
 
 
@@ -39,10 +43,10 @@ class OrderViewSet(viewsets.ModelViewSet):
     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset
     properties: queryset=specifies the model and query parameters
                 serializer_class=specifies the corresponding serializer
- 
-    """
-    queryset = Order.objects.all()
-    serializer_class = OrderTypeSerializer
+...."""
+
+    queryset = Orders.objects.order_by('product_name')
+    serializer_class = OrdersTypeSerializer
 
 
 class DepartmentViewSet(viewsets.ModelViewSet):
@@ -54,7 +58,9 @@ class DepartmentViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
  
     """
-    queryset = Department.objects.all()
+
+
+    queryset = Department.objects.order_by('name')
     serializer_class = DepartmentSerializer
 
 
@@ -67,7 +73,9 @@ class EmployeeViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
 
     """
-    queryset = Employee.objects.all()
+
+
+    queryset = Employee.objects.order_by('first_name')
     serializer_class = EmployeeSerializer
 
 
@@ -80,7 +88,9 @@ class CustomerViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
 
     """
-    queryset = Customer.objects.all()
+
+
+    queryset = Customer.objects.order_by('first_name')
     serializer_class = CustomerSerializer
 
 
@@ -93,7 +103,9 @@ class ComputerViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
  
     """
-    queryset = Computer.objects.all()
+
+
+    queryset = Computer.objects.order_by('purchase_date')
     serializer_class = ComputerSerializer
 
 
@@ -106,7 +118,9 @@ class ProductViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
 
     """
-    queryset = Product.objects.all()
+
+
+    queryset = Product.objects.order_by('product_name')
     serializer_class = ProductSerializer
 
 
@@ -117,8 +131,9 @@ class TrainingProgramViewSet(viewsets.ModelViewSet):
     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset
     properties: queryset=specifies the model and query parameters
                 serializer_class=specifies the corresponding serializer
-     """
-    queryset = TrainingProgram.objects.all()
+    """
+
+    queryset = TrainingProgram.objects.order_by('program_name')
     serializer_class = TrainingProgramSerializer
 
 
@@ -130,9 +145,6 @@ class CustomerSupportViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
  
     """
-    queryset = CustomerSupport.objects.all()
+
+    queryset = CustomerSupport.objects.order_by('date_ticket_created')
     serializer_class = CustomerSupportSerializer
-
-
-
-            

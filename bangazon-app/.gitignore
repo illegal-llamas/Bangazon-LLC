@@ -1,3 +1,4 @@
 bangazon/__pycache__/
 bangazon/api/__pycache__/
 bangazon/api/migrations/
+bangazon-app/db.sqlite3
