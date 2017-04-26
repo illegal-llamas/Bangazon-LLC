@@ -8,7 +8,6 @@ from bangazon.api.models import *
 # Create your views here.
 
 class ProductTypeViewSet(viewsets.ModelViewSet):
-
     """
     API endpoint that allows product types to be viewed or edited.
     Author: Jordan Nelson
@@ -17,14 +16,13 @@ class ProductTypeViewSet(viewsets.ModelViewSet):
 
     """
 
+
     queryset = ProductType.objects.order_by('product_type_name')
     serializer_class = ProductTypeSerializer
 
 
-# view to represent customer payment type information
 
 class CustomerPaymentTypeViewSet(viewsets.ModelViewSet):
-
     """
     author: casey dailey
     purpose: creates a viewset class to represent custmer payment type information
@@ -33,19 +31,18 @@ class CustomerPaymentTypeViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
     """
 
+
     queryset = CustomerPaymentType.objects.order_by('payment_type_name')
     serializer_class = CustomerPaymentTypeSerializer
 
 
-class OrdersViewSet(viewsets.ModelViewSet):
-
+class OrderViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows orders to be viewed or edited.
     Author: Harper Frankstone
     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset
     properties: queryset=specifies the model and query parameters
                 serializer_class=specifies the corresponding serializer
- 
 ...."""
 
     queryset = Orders.objects.order_by('product_name')
@@ -53,7 +50,6 @@ class OrdersViewSet(viewsets.ModelViewSet):
 
 
 class DepartmentViewSet(viewsets.ModelViewSet):
-
     """
     API endpoint that allows departments to be viewed or edited.
     Author: Harper Frankstone
@@ -63,12 +59,12 @@ class DepartmentViewSet(viewsets.ModelViewSet):
  
     """
 
+
     queryset = Department.objects.order_by('name')
     serializer_class = DepartmentSerializer
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
-
     """
     API endpoint that allows employees to be viewed or edited.
     Author: Jordan Nelson
@@ -78,12 +74,12 @@ class EmployeeViewSet(viewsets.ModelViewSet):
 
     """
 
+
     queryset = Employee.objects.order_by('first_name')
     serializer_class = EmployeeSerializer
 
 
 class CustomerViewSet(viewsets.ModelViewSet):
-
     """
     author: Kayla Brewer
     purpose: creates a viewset class to represent the customer table
@@ -93,12 +89,12 @@ class CustomerViewSet(viewsets.ModelViewSet):
 
     """
 
+
     queryset = Customer.objects.order_by('first_name')
     serializer_class = CustomerSerializer
 
 
 class ComputerViewSet(viewsets.ModelViewSet):
-
     """
     API endpoint that allows computers to be viewed or edited
     Author: Nick Nash
@@ -108,12 +104,12 @@ class ComputerViewSet(viewsets.ModelViewSet):
  
     """
 
+
     queryset = Computer.objects.order_by('purchase_date')
     serializer_class = ComputerSerializer
 
 
 class ProductViewSet(viewsets.ModelViewSet):
-
     """
     author: Harper Frankstone
     purpose: creates a viewset class to represent the training programs table
@@ -123,19 +119,18 @@ class ProductViewSet(viewsets.ModelViewSet):
 
     """
 
+
     queryset = Product.objects.order_by('product_name')
     serializer_class = ProductSerializer
 
 
 class TrainingProgramViewSet(viewsets.ModelViewSet):
-
     """
     author: Harper Frankstone
     purpose: creates a viewset class to represent the training programs table
     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset
     properties: queryset=specifies the model and query parameters
                 serializer_class=specifies the corresponding serializer
- 
     """
 
     queryset = TrainingProgram.objects.order_by('program_name')
@@ -143,7 +138,6 @@ class TrainingProgramViewSet(viewsets.ModelViewSet):
 
 
 class CustomerSupportViewSet(viewsets.ModelViewSet):
-
     """author: Nick Nash
     purpose: creates a viewset class to represent the customer support table created
     args: viewsets.ModelViewSet, see docs @ http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset
