@@ -199,7 +199,7 @@ class ProductOrder(models.Model):
     Order = Foreign Key to the table Id of the Order table
     """
 
-    Product = models.ForeignKey(Customer)
-    Order = models.ForeignKey(Order)
+    product = models.ForeignKey(Customer)
+    order = models.ForeignKey(Order)
 
             

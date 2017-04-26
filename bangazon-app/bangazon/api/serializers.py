@@ -180,16 +180,3 @@ class CustomerSupportSerializer(serializers.HyperlinkedModelSerializer):
         """
         model = CustomerSupport
         exclude = ()
-
-class ProductOrderSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        """
-        author: Jordan Nelson
-        purpose: extends the parent serializer class with validators
-        properties: model = specifies the model to be serialized
-                    exclude = specifies fields to be included (here we exclude none)
-
-        docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
-        """
-        model = ProductOrder
-        exclude = ()            
