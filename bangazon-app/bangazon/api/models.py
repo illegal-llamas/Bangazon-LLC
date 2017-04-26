@@ -118,7 +118,7 @@ class Department(models.Model):
         return self.departmentName
 
 
-class EmployeeType(models.Model):
+class Employee(models.Model):
 
     """
     Author: Jordan Nelson
@@ -157,7 +157,7 @@ class ComputerType(models.Model):
     employee_id = models.ForeignKey(EmployeeType, blank=True, null=True)
 
 
-class TrainingPrograms(models.Model):
+class TrainingProgram(models.Model):
 
     """author: Harper Frankstone
        purpose: defines properties associated with the TrainingProgram
@@ -202,6 +202,6 @@ class EmployeeTraining(models.Model):
                 TrainingProgramID: foreign key constraint to Training Program table 
     
     """
-    Employee = models.ForeignKey(EmployeeType)
-    TrainingPrograms = models.ForeignKey(TrainingPrograms)
+    Employee = models.ForeignKey(Employee)
+    TrainingPrograms = models.ForeignKey(TrainingProgram)
             
