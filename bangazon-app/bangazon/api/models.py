@@ -190,6 +190,14 @@ class CustomerSupport(models.Model):
     resolution_description = models.CharField(max_length=100)
     date_ticket_resolved = models.CharField(max_length=50)
 
-
+class ComputerEmployee(models.Model)
+    """author: Nick Nash
+    purpose: Links employees with all computers they have ever been assigned to
+    properties: 
+    computer=integer, is the foreign key of the computer class
+    employee=integer, is the foreign key of the employee class
+    """
+    computer = models.ForeignKey(Computer) # Might not work until all code clean up is applied
+    employee = models.ForeignKey(Employee) # Might not work until all code clean up is applied
 
             
