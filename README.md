@@ -9,8 +9,7 @@ Note: If you do not have Python installed, click this [link](https://www.python.
   ```git clone https://github.com/illegal-llamas/Bangazon-LLC.git```
   * ```cd``` into the directory of the cloned repository.
   * Run ```python manage.py makemigrations``` to build the database.
-  * Run ```python manage.py migrate``` to sync the database.
-  * Run ```python manage.py --run-syncdb``` to match up the tables. 
+  * Run ```python manage.py migrate --run-syncdb``` to sync the database.
   * Run ```python manage.py loaddata initial_data.json``` to load initial dummy data.
   * Run ```python manage.py runserver``` to run the Django server.
   * Navigate to [http://localhost:8000/](http://localhost:8000/) to take advantage of the Bangazon API!
