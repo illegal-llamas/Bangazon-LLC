@@ -7,7 +7,8 @@ class ProductType(models.Model):
 
     """
     Author: Jordan Nelson
-    Properties:Creates table "ProductType" with the column producttypename, the __str__ method makes the producttypename available to be used in a later foreign key constraint
+    Properties:Creates table "ProductType" with the column product_type_name, 
+    the __str__ method makes the product_type_name available to be used in a later foreign key constraint
     """
 
     product_type_name = models.CharField(max_length=100)
@@ -21,7 +22,8 @@ class Customer(models.Model):
     """ 
     author: Kayla Brewer
     purpose: defines properties associated with the customer object
-    properties: customerFirstName, customerLastName, active, customerSince, the __str__ method makes the customerFIrstName available to be used in a later foreign key constraint
+    properties: first_name, customer_last_name, active, customer_since, 
+    the __str__ method makes the first_name available to be used in a later foreign key constraint
     """
 
     first_name = models.CharField(max_length=100)
@@ -34,7 +36,7 @@ class Customer(models.Model):
            purpose: return human readable sting representation of class instance object
            args: 'self', instance of paymentType object
         """
-        return self.customer_first_name
+        return self.first_name
 
 
 # employee payment type:
@@ -56,7 +58,7 @@ class CustomerPaymentType(models.Model):
     def __str__(self):
         """author: Casey Dailey
            purpose: return human readable sting representation of class instance object
-           args: 'self', instance of paymentType object
+           args: 'self', instance of PaymentType object
         """
         return self.payment_type_name
 
@@ -66,10 +68,10 @@ class Product(models.Model):
     """author: the Nick Nash
     purpose: defines properties associated with the products that customers create
     properties: productTypeID=integer, associated with the foreign key from the ProductType table
-    customerID=integer,foreign key from the Customer table
-    productName=string, specific product's name
-    productPrice=float, specific product's price
-    productDescription=string, associated with the specific product's description
+    customer=integer,foreign key from the Customer table
+    product_name=string, specific product's name
+    product_price=float, specific product's price
+    product_description=string, associated with the specific product's description
     methods: __str__
     """
 
@@ -114,7 +116,7 @@ class Department(models.Model):
     def __str__(self):
         """author: Harper Frankstone
            purpose: return human readable sting representation of class instance object
-           args: 'self', instance of departmentName object
+           args: 'self', instance of Department object
         """
         return self.name
 
@@ -124,8 +126,8 @@ class Employee(models.Model):
     Author: Jordan Nelson
     Properties:
     Creates table "EmployeeType" with a foreign key 'departmentID'
-    and columns: employeeFirstName, employeeLastName, employeeTitle, employeePay
-    and supervisor. the __str__ method makes the employeeFirstName available to be used in a later foreign key constraint
+    and columns: employee_first_name, employee_last_name, employee_title, employee_pay
+    and supervisor. the __str__ method makes the employee_first_name available to be used in a later foreign key constraint
     """
     department = models.ForeignKey(Department)
     first_name = models.CharField(max_length=100)
@@ -137,7 +139,7 @@ class Employee(models.Model):
     def __str__(self):
         """author: Harper Frankstone
            purpose: return human readable sting representation of class instance object
-           args: 'self', instance of employeeFirstName object
+           args: 'self', instance of Employee object
         """
         return self.first_name
 
@@ -156,7 +158,7 @@ class Computer(models.Model):
 class TrainingProgram(models.Model):
     """author: Harper Frankstone
        purpose: defines properties associated with the TrainingProgram
-       properties: trainingProgramName,startDate, endDate, maxAttendees
+       properties: program_name,start_date, end_date, max_attendees
     """
     program_name = models.CharField(max_length=100)
     start_date = models.CharField(max_length=100)
@@ -168,10 +170,10 @@ class CustomerSupport(models.Model):
     """author: the Nick Nash
     purpose: defines properties associate with the customer support provided to customers with issues
     properties: 
-    customerID=integer, associated with the foreign key from the Customer table
-    orderID=integer, associated with the foreign key from the Order table
-    ticket_description=string, associated with the specific customer's reported issue
-    date_ticket_created=string, associated with the date the customer reported the issue
+    customer=integer, id from Customer table
+    order=integer, id from Order table
+    ticket_description=string, specific customer's reported issue
+    date_ticket_created=string, date the customer reported the issue
     resolution_description=string, associated with the resolved issue's description
     date_ticket_resolved=string, associated with the date the customer's issue was resolved
     """
