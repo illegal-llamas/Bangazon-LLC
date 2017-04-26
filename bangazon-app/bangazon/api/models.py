@@ -170,6 +170,8 @@ class TrainingPrograms(models.Model):
     maxAttendees = models.IntegerField()
 
 
+
+
 class CustomerSupport(models.Model):
 
     """author: the Nick Nash
@@ -190,6 +192,16 @@ class CustomerSupport(models.Model):
     resolution_description = models.CharField(max_length=100)
     date_ticket_resolved = models.CharField(max_length=50)
 
+class EmployeeTraining(models.Model):
 
-
+    """
+    author: Kayla Brewer
+    purpose: This model describes and maps the relationship between the Employee table and the Training Program table.
+    properties: 
+                employeeID: foreign key constraint to Employee table
+                TrainingProgramID: foreign key constraint to Training Program table 
+    
+    """
+    Employee = models.ForeignKey(EmployeeType)
+    TrainingPrograms = models.ForeignKey(TrainingPrograms)
             
