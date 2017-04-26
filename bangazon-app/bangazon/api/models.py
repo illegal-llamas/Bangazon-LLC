@@ -202,6 +202,6 @@ class EmployeeTraining(models.Model):
                 TrainingProgramID: foreign key constraint to Training Program table 
     
     """
-    Employee = models.ForeignKey(Employee)
-    TrainingPrograms = models.ForeignKey(TrainingProgram)
+    employee = models.ForeignKey(Employee)
+    training_programs = models.ForeignKey(TrainingProgram)
             
