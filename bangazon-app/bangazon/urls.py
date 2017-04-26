@@ -8,6 +8,7 @@ from django.contrib import admin
 #but additionally includes a default API root view, that returns a response containing hyperlinks to all the list views. 
 #It also generates routes for optional .json style format suffixes.
 router = routers.DefaultRouter()
+
 #docs: http://www.django-rest-framework.org/api-guide/routers/#usage
 #There are two mandatory arguments to the register() method:
 # prefix - The URL prefix to use for this set of routes.

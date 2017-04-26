@@ -1,12 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
 class ProductType(models.Model):
-	'''
+	"""
 	Author: Jordan Nelson
-	Properties:
-	Creates table "ProductType" with the column producttypename, the __str__ method makes the producttypename available to be used in a later foreign key constraint
-	'''
+	Properties:Creates table "ProductType" with the column producttypename, the __str__ method makes the producttypename available to be used in a later foreign key constraint
+	"""
 	producttypename = models.CharField(max_length=100)
 
 	def __str__(self):
@@ -28,35 +27,35 @@ class Customer(models.Model):
 
 #employee payment type:
 class CustomerPaymentType(models.Model):
-    ''' author: Casey Dailey
-        purpose: 
-        defines properties associated with the customers payment type
-        properties:
-        paymentTypeAccountNumber=integer, associated with whatever payment method account used
+    """ author: Casey Dailey
+        purpose: defines properties associated with the customers payment type
+        properties:paymentTypeAccountNumber=integer, associated with whatever payment method account used
         paymentTypeName=string, name of given payment type (credit, debit, gift card)
         customerID=integer, foreign key from customer table establishes the relationship between customer and payment type
-        the __str__ method makes the paymentTypeName available to be used in a later foreign key constraint
-    '''
+        methods: __str__
+    """
     paymentTypeAccountNumber = models.IntegerField()
     paymentTypeName = models.CharField(max_length=50)
     customerID = models.ForeignKey(Customer)
 
     def __str__(self):
+        """author: Casey Dailey
+           purpose: return human readable sting representation of class instance object
+           args: 'self', instance of paymentType object
+        """
     	return self.paymentTypeName
 
 
 class Product(models.Model):
-	'''author: Nick Nash
+	"""author: the Nick Nash
 	purpose: defines properties associated with the products that customers create
-	properties: 
-	productTypeID=integer, associated with the foreign key from the ProductType table
-	customerID=integer, associated with the foreign key from the Customer table
-	productName=string, associated with the specific product's name
-	productPrice=float, associated with the specific product's price
+	properties: productTypeID=integer, associated with the foreign key from the ProductType table
+	customerID=integer,foreign key from the Customer table
+	productName=string, specific product's name
+	productPrice=float, specific product's price
 	productDescription=string, associated with the specific product's description
-	the __str__ method makes the productName available to be used in a later foreign key constraint
-	docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
-	'''
+	methods: __str__
+	"""
 	productTypeID = models.ForeignKey(ProductType)
 	customerID = models.ForeignKey(Customer)
 	productName = models.CharField(max_length=100)
@@ -64,38 +63,48 @@ class Product(models.Model):
 	productDescription = models.CharField(max_length=100)
 
 	def __str__(self):
+        """author: the Nick Nash
+           purpose: return human readable sting representation of class instance object
+           args: 'self', instance of productName object
+        """
 		return self.productName
 
 
 class Orders(models.Model):
-    '''author: Harper Franktone
-       purpose: defines properties associated with the Orders
-       properties: customerId = relates the orders table to the Customer table through a Foreign Key, paymentTypeId = relates the orders table to the PaymentType table through a foreign key, product_id = relates this table to the Product table through a foreign key
-    '''
+    """author: Harper Franktone
+       purpose: defines properties associated with the Orders 
+       properties: customerId = relates the orders table to the Customer table through a Foreign Key, 
+        paymentTypeId = relates the orders table to the PaymentType table through a foreign key, 
+        product_id = relates this table to the Product table through a foreign key
+    """
     customerID = models.ForeignKey(Customer)
     paymentTypeId = models.ForeignKey(CustomerPaymentType)
     product_name = models.ForeignKey(Product)
 
 
 class Department(models.Model):
-    '''author: Harper Franktone
+    """author: Harper Frankstone
        purpose: defines properties associated with the Departments
        properties: departmentName = builds the department name column in the department table, departmentBudget = builds the department budget column for the the department table, the __str__ method makes the departmentName available to be used in a later foreign key constraint
-    '''
+    """
     departmentName = models.CharField(max_length=100)
     departmentBudget = models.IntegerField()
 
     def __str__(self):
+        """author: Harper Frankstone
+           purpose: return human readable sting representation of class instance object
+           args: 'self', instance of departmentName object
+        """
     	return self.departmentName
 
 class EmployeeType(models.Model):
-	'''
+	"""
 	Author: Jordan Nelson
 	Properties:
 	Creates table "EmployeeType" with a foreign key 'departmentID'
 	and columns: employeeFirstName, employeeLastName, employeeTitle, employeePay
 	and supervisor. the __str__ method makes the employeeFirstName available to be used in a later foreign key constraint
-	'''
+	"""
 	departmentID = models.ForeignKey(Department)
 	employeeFirstName = models.CharField(max_length=100)
 	employeeLastName = models.CharField(max_length=100)
@@ -104,34 +113,36 @@ class EmployeeType(models.Model):
 	supervisor = models.BooleanField(default=False)
 
 	def __str__(self):
+        """author: Harper Frankstone
+           purpose: return human readable sting representation of class instance object
+           args: 'self', instance of employeeFirstName object
+        """
 		return self.employeeFirstName
 
 
 
 class ComputerType(models.Model):
-	'''author: Nick Nash
+	"""author: Nick Nash
 	purpose: defines properties associated with the employee's computer table
-	properties: 
-	computerPurchaseDate=string, associated with when the computer was purchased
-	computerDecomissionDate=string, assocatied with if the computer was decomissioned 
-	docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
-	'''
+	properties: computerPurchaseDate=string, associated with when the computer was purchased
+	computerDecomissionDate=string, assocatied with if the computer was decomissioned  
+	"""
 	computerPurchaseDate = models.CharField(max_length=50)
 	computerDecomissionDate = models.CharField(max_length=50)
 	employee_id = models.ForeignKey(EmployeeType, blank=True, null=True)
 
 class TrainingPrograms(models.Model):
-    '''author: Harper Franktone
+    """author: Harper Frankstone
        purpose: defines properties associated with the TrainingProgram
-       properties: 
-    '''
+       properties: trainingProgramName,startDate, endDate, maxAttendees
+    """
     trainingProgramName = models.CharField(max_length=100)
     startDate = models.CharField(max_length=100)
     endDate = models.CharField(max_length=100)
     maxAttendees = models.IntegerField()
 
 class CustomerSupport(models.Model):
-    """author: Nick Nash
+    """author: the Nick Nash
     purpose: defines properties associate with the customer support provided to customers with issues
     properties: 
     customerID=integer, associated with the foreign key from the Customer table
