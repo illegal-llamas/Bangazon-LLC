@@ -44,7 +44,7 @@ class CustomerPaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
         exclude = ()
 
 
-class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
+class OrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     author: casey dailey
     purpose: specify model and fields to include (here we include all)
@@ -61,7 +61,7 @@ class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = Orders
+        model = Order
         exclude = ()
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
@@ -84,7 +84,7 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         model = Department
         exclude = ()
 
-class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
+class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """
     author: casey dailey
     purpose: specify model and fields to include (here we include all)
@@ -101,7 +101,7 @@ class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = EmployeeType
+        model = Employee
         exclude = ()
 
 
@@ -125,7 +125,7 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         model = Customer
         exclude = ()
 
-class ComputerTypeSerializer(serializers.HyperlinkedModelSerializer):
+class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """
         author: Kayla Brewer
@@ -136,7 +136,7 @@ class ComputerTypeSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = ComputerType
+        model = Computer
         exclude = ()
         
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
@@ -153,7 +153,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
         model = Product
         exclude = ()
 
-class TrainingProgramsSerializer(serializers.HyperlinkedModelSerializer):
+class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """
         author: Harper Frankstone
@@ -164,7 +164,7 @@ class TrainingProgramsSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = TrainingPrograms
+        model = TrainingProgram
         exclude = ()
 
 class CustomerSupportSerializer(serializers.HyperlinkedModelSerializer):
