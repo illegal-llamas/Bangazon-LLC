@@ -51,7 +51,7 @@ class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
     args: serializers.HyperlinkedModelSerializer, see docs @ http://www.django-rest-framework.org/api-guide/serializers/#hyperlinkedmodelserializer 
     uses hyperlinks to represent relationships, rather than primary keys.
     """
-	class Meta:
+    class Meta:
         """
         author: casey dailey
         purpose: extends the parent serializer class with validators 
@@ -61,8 +61,8 @@ class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-		model = Orders
-		exclude = ()
+        model = Orders
+        exclude = ()
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -71,7 +71,7 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     args: serializers.HyperlinkedModelSerializer, see docs @ http://www.django-rest-framework.org/api-guide/serializers/#hyperlinkedmodelserializer 
     uses hyperlinks to represent relationships, rather than primary keys.
     """
-	class Meta:
+    class Meta:
         """
         author: casey dailey
         purpose: extends the parent serializer class with validators 
@@ -81,8 +81,8 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-		model = Department
-		exclude = ()
+        model = Department
+        exclude = ()
 
 class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
     """
@@ -138,7 +138,7 @@ class ComputerTypeSerializer(serializers.HyperlinkedModelSerializer):
         """
         model = ComputerType
         exclude = ()
-		
+        
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """
@@ -181,3 +181,7 @@ class CustomerSupportSerializer(serializers.HyperlinkedModelSerializer):
         model = CustomerSupport
         exclude = ()
         
+
+            
+            
+            
