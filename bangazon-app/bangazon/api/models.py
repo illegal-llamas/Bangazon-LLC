@@ -184,7 +184,7 @@ class CustomerSupport(models.Model):
     resolution_description = models.CharField(max_length=250)
     date_ticket_resolved = models.CharField(max_length=50)
 
-class ComputerEmployee(models.Model)
+class ComputerEmployee(models.Model):
     """author: Nick Nash
     purpose: Links employees with all computers they have ever been assigned to
     properties: 
