@@ -1,0 +1,82 @@
+[
+  {
+    "model": "api.ProductOrder",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "order": 1
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 2,
+    "fields": {
+      "product": 2,
+      "order": 2
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 3,
+    "fields": {
+      "product": 3,
+      "order": 3
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 4,
+    "fields": {
+      "product": 4,
+      "order": 4
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 5,
+    "fields": {
+      "product": 5,
+      "order": 5
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 6,
+    "fields": {
+      "product": 6,
+      "order": 6
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 7,
+    "fields": {
+      "product": 7,
+      "order": 7
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 8,
+    "fields": {
+      "product": 8,
+      "order": 8
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 9,
+    "fields": {
+      "product": 9,
+      "order": 9
+    }
+  },
+  {
+    "model": "api.ProductOrder",
+    "pk": 10,
+    "fields": {
+      "product": 10,
+      "order": 10
+    }
+  }
+]
