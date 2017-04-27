@@ -45,8 +45,8 @@ class OrderViewSet(viewsets.ModelViewSet):
                 serializer_class=specifies the corresponding serializer
 ...."""
 
-    queryset = Orders.objects.order_by('product_name')
-    serializer_class = OrdersTypeSerializer
+    queryset = Order.objects.order_by('product_name')
+    serializer_class = OrderSerializer
 
 
 class DepartmentViewSet(viewsets.ModelViewSet):
