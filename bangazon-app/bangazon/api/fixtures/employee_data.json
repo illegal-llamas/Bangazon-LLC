@@ -1,0 +1,122 @@
+[
+  {
+    "model": "api.employee",
+    "pk": 1,
+    "fields": {
+      "department": 1,
+      "first_name": "Casey",
+      "last_name": "Dailey",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 2,
+    "fields": {
+      "department": 2,
+      "first_name": "Kayla",
+      "last_name": "Brewer",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "True"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 3,
+    "fields": {
+      "department": 3,
+      "first_name": "Jordan",
+      "last_name": "Nelson",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 4,
+    "fields": {
+      "department": 4,
+      "first_name": "Harper",
+      "last_name": "Frankstone",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 5,
+    "fields": {
+      "department": 5,
+      "first_name": "Dean",
+      "last_name": "Smith",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 6,
+    "fields": {
+      "department": 6,
+      "first_name": "Taylor",
+      "last_name": "Perkins",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 7,
+    "fields": {
+      "department": 7,
+      "first_name": "Dara",
+      "last_name": "Thomas",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 8,
+    "fields": {
+      "department": 8,
+      "first_name": "Miriam",
+      "last_name": "Rosenbaum",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 9,
+    "fields": {
+      "department": 9,
+      "first_name": "Will",
+      "last_name": "Simms",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  },
+  {
+    "model": "api.employee",
+    "pk": 10,
+    "fields": {
+      "department": 10,
+      "first_name": "William",
+      "last_name": "Caldwell",
+      "title": "job doer",
+      "pay": 1000000000,
+      "supervisor": "False"
+    }
+  }
+]
