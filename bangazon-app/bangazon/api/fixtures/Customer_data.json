@@ -1,0 +1,103 @@
+[
+  {
+    "model": "api.Customer",
+    "pk": 1,
+    "fields": {
+      "first_name": "Harper",
+      "last_name": "Frankstone",
+      "active": "True",
+      "customer_since": "2017-02-02"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 2,
+    "fields": {
+      "first_name": "Kayla",
+      "last_name": "Brewer",
+      "active": "True",
+      "customer_since": "2017-02-03"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 3,
+    "fields": {
+      "first_name": "Casey",
+      "last_name": "Dailey",
+      "active": "True",
+      "customer_since": "2017-02-04"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 4,
+    "fields": {
+      "first_name": "Nick",
+      "last_name": "Nash",
+      "active": "True",
+      "customer_since": "2017-02-05"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 5,
+    "fields": {
+      "first_name": "Jordan",
+      "last_name": "Nelson",
+      "active": "True",
+      "customer_since": "2017-02-06"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 6,
+    "fields": {
+      "first_name": "Steve",
+      "last_name": "Brownlee",
+      "active": "True",
+      "customer_since": "2017-02-07"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 7,
+    "fields": {
+      "first_name": "Dean",
+      "last_name": "Smith",
+      "active": "True",
+      "customer_since": "2017-02-08"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 8,
+    "fields": {
+      "first_name": "Blaize",
+      "last_name": "Roberts",
+      "active": "True",
+      "customer_since": "2017-01-02"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 9,
+    "fields": {
+      "first_name": "Jeremy",
+      "last_name": "Bakker",
+      "active": "True",
+      "customer_since": "2017-01-02"
+    }
+  },
+  {
+    "model": "api.Customer",
+    "pk": 10,
+    "fields": {
+      "first_name": "Adam",
+      "last_name": "Myers",
+      "active": "True",
+      "customer_since": "2017-01-03"
+    }
+  }
+]
+
