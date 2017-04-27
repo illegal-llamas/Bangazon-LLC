@@ -1,0 +1,92 @@
+[
+  {
+    "model": "api.Computer",
+    "pk": 1,
+    "fields": {
+      "purchase_date": "01/02/11",
+      "decomission_date": "02/03/22",
+      "employee": 1
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 2,
+    "fields": {
+      "purchase_date": "01/02/12",
+      "decomission_date": "02/02/22",
+      "employee": 2
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 3,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 3
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 4,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 5
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 5,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 5
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 6,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 6
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 7,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 7
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 8,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 8
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 9,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 9
+    }
+  },
+  {
+    "model": "api.Computer",
+    "pk": 10,
+    "fields": {
+      "purchase_date": "01/01/11",
+      "decomission_date": "02/02/22",
+      "employee": 10
+    }
+  }
+]
