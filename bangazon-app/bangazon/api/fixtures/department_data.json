@@ -1,0 +1,82 @@
+[
+  {
+    "model": "api.department",
+    "pk": 1,
+    "fields": {
+      "name": "Information Technology",
+      "budget": 1000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 2,
+    "fields": {
+      "name": "Human Resources",
+      "budget": 5000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 3,
+    "fields": {
+      "name": "Marketing",
+      "budget": 15000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 4,
+    "fields": {
+      "name": "Sales",
+      "budget": 20000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 5,
+    "fields": {
+      "name": "Management",
+      "budget": 2000000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 6,
+    "fields": {
+      "name": "Research and Development",
+      "budget": 4000000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 7,
+    "fields": {
+      "name": "Janitorial",
+      "budget": 1000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 8,
+    "fields": {
+      "name": "Landscaping",
+      "budget": 10000000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 9,
+    "fields": {
+      "name": "Department of Redundancy Department",
+      "budget": 20000
+    }
+  },
+  {
+    "model": "api.department",
+    "pk": 10,
+    "fields": {
+      "name": "Coffee Getting",
+      "budget": 50000
+    }
+  }
+]
