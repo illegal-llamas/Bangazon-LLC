@@ -1,0 +1,72 @@
+[
+  {
+    "model": "api.ProductType",
+    "pk": 1,
+    "fields": {
+      "product_type_name": "Textbooks"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 2,
+    "fields": {
+      "product_type_name": "Electronics"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 3,
+    "fields": {
+      "product_type_name": "Sports Equipment"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 4,
+    "fields": {
+      "product_type_name": "Pet Toys"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 5,
+    "fields": {
+      "product_type_name": "Video Games"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 6,
+    "fields": {
+      "product_type_name": "Auto Care"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 7,
+    "fields": {
+      "product_type_name": "Clothes"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 8,
+    "fields": {
+      "product_type_name": "Music Equipment"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 9,
+    "fields": {
+      "product_type_name": "Ceramics"
+    }
+  },
+  {
+    "model": "api.ProductType",
+    "pk": 10,
+    "fields": {
+      "product_type_name": "Camping"
+    }
+  }
+]
