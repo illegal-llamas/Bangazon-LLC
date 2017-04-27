@@ -1,0 +1,102 @@
+[
+  {
+    "model": "api.TrainingProgram",
+    "pk": 1,
+    "fields": {
+      "program_name": "How to Not Go Gently Into That Good Night",
+      "start_date": "Jan 27 2017",
+      "end_date": "Feb 27 2017",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 2,
+    "fields": {
+      "program_name": "How to Keep Doing Things You Really Shouldn't Be Doing",
+      "start_date": "Apr 27 2017",
+      "end_date": "May 27 2017",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 3,
+    "fields": {
+      "program_name": "How to Pretend to Have No Hard Feelings",
+      "start_date": "Jun 27 2017",
+      "end_date": "Jul 27 2017",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 4,
+    "fields": {
+      "program_name": "How to Cope with Your Unattractive Personality",
+      "start_date": "Aug 27 2017",
+      "end_date": "Sep 27 2017",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 5,
+    "fields": {
+      "program_name": "How to Make Your Own Depressing Memories",
+      "start_date": "Oct 27 2017",
+      "end_date": "Nov 27 2017",
+      "max_attendees": "25"
+    }
+  },
+    {
+    "model": "api.TrainingProgram",
+    "pk": 6,
+    "fields": {
+      "program_name": "How to Be Really Passionate About Not Caring",
+      "start_date": "Dec 27 2017",
+      "end_date": "Jan 27 2018",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 7,
+    "fields": {
+      "program_name": "How to Be Jealous",
+      "start_date": "Feb 27 2018",
+      "end_date": "Mar 27 2018",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 8,
+    "fields": {
+      "program_name": "How to Confuse Vodka With Water. Every day. Several times",
+      "start_date": "Apr 27 2018",
+      "end_date": "May 27 2018",
+      "max_attendees": "25"
+    }
+  },
+  {
+    "model": "api.TrainingProgram",
+    "pk": 9,
+    "fields": {
+      "program_name": "How to Use the Silent Treatment in a Street Fight",
+      "start_date": "Jun 27 2018",
+      "end_date": "Jul 27 2018",
+      "max_attendees": "25"
+    }
+  },
+    {
+    "model": "api.TrainingProgram",
+    "pk": 10,
+    "fields": {
+      "program_name": "How to Run from the Mess You Made",
+      "start_date": "Aug 27 2018",
+      "end_date": "Sep 27 2018",
+      "max_attendees": "25"
+    }
+  }
+]
