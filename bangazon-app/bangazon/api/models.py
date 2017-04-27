@@ -218,4 +218,3 @@ class ProductOrder(models.Model):
 
     product = models.ForeignKey(Customer)
     order = models.ForeignKey(Order)
-
