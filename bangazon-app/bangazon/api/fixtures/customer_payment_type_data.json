@@ -1,0 +1,111 @@
+[
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 1,
+    "fields": {
+      "account_number": 12345678,
+      "payment_type_name": "Visa",
+      "customer": 1
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 2,
+    "fields": {
+      "account_number": 34567974,
+      "payment_type_name": "Mastercard",
+      "customer": 2
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 3,
+    "fields": {
+      "account_number": 13457894,
+      "payment_type_name": "Amex",
+      "customer": 3
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 3,
+    "fields": {
+      "account_number": 34578904,
+      "payment_type_name": "Visa",
+      "customer": 3
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 3,
+    "fields": {
+      "account_number": 23457894,
+      "payment_type_name": "Mastercard",
+      "customer": 3
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 4,
+    "fields": {
+      "account_number": 12567896,
+      "payment_type_name": "Amex",
+      "customer": 4
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 5,
+    "fields": {
+      "account_number": 34586721,
+      "payment_type_name": "Visa",
+      "customer": 5
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 6,
+    "fields": {
+      "account_number": 34678903,
+      "payment_type_name": "Mastercard",
+      "customer": 6
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 7,
+    "fields": {
+      "account_number": 12567834,
+      "payment_type_name": "Amex",
+      "customer": 7
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 8,
+    "fields": {
+      "account_number": 1346789,
+      "payment_type_name": "Visa",
+      "customer": 8
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 9,
+    "fields": {
+      "account_number": 13685467,
+      "payment_type_name": "Mastercard",
+      "customer": 9
+    }
+  },
+  {
+    "model": "api.CustomerPaymentType",
+    "pk": 10,
+    "fields": {
+      "account_number": 13578945,
+      "payment_type_name": "Amex",
+      "customer": 10
+    }
+  }
+]
+
