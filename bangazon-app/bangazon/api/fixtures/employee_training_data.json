@@ -1,0 +1,82 @@
+ [
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 1,
+    "fields": {
+      "employee": 1,
+      "training_programs": 1
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 2,
+    "fields": {
+      "employee": 2,
+      "training_programs": 2
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 3,
+    "fields": {
+      "employee": 3,
+      "training_programs": 3
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 4,
+    "fields": {
+      "employee": 4,
+      "training_programs": 4
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 5,
+    "fields": {
+      "employee": 5,
+      "training_programs": 5
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 6,
+    "fields": {
+      "employee": 6,
+      "training_programs": 6
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 7,
+    "fields": {
+      "employee": 7,
+      "training_programs": 7
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 8,
+    "fields": {
+      "employee": 8,
+      "training_programs": 8
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 9,
+    "fields": {
+      "employee": 9,
+      "training_programs": 9
+    }
+  },
+  {
+    "model": "api.EmployeeTraining",
+    "pk": 10,
+    "fields": {
+      "employee": 10,
+      "training_programs": 10
+    }
+  }
+]
