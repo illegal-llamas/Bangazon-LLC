@@ -4,15 +4,20 @@ Bangazon, LLC provides a RESTful API, utilizing the Django REST Framework, to pr
 ## Steps To Install
 Please refer to the following steps to use the Bangazon API:
 Note: If you do not have Python installed, click this [link](https://www.python.org/downloads/) and follow instructions to download Python 3.6.
+
   * Follow this [link](http://www.django-rest-framework.org/#installation) to download the Django REST Framework, if you do not have it already.
-  * Copy and paste the following command into your terminal:
-  ```git clone https://github.com/illegal-llamas/Bangazon-LLC.git```
-  * ```cd``` into the directory of the cloned repository.
-  * Run ```python manage.py makemigrations``` to build the database.
-  * Run ```python manage.py migrate --run-syncdb``` to sync the database.
-  * Run ```python manage.py loaddata initial_data.json``` to load initial dummy data.
-  * Run ```python manage.py runserver``` to run the Django server.
-  * Navigate to [http://localhost:8000/](http://localhost:8000/) to take advantage of the Bangazon API!
+  
+  * Copy and paste the following command into your terminal in your preferred directory:
+  
+  ```
+  git clone https://github.com/illegal-llamas/Bangazon-LLC.git
+  cd bangazon-LLC/bangazon-app
+  python manage.py migrate
+  python manage.py runserver
+  
+  ```
+  
+  * navigate to http://127.0.0.1:8000/ and that's it; You're in!
 
 ## Link to Issue Board
   * [Issues](https://github.com/illegal-llamas/Bangazon-LLC/issues)
