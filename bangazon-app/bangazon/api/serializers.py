@@ -44,7 +44,7 @@ class CustomerPaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
         exclude = ()
 
 
-class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
+class OrderSerializer(serializers.HyperlinkedModelSerializer):
     """
     author: casey dailey
     purpose: specify model and fields to include (here we include all)
@@ -61,7 +61,7 @@ class OrdersTypeSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = Orders
+        model = Order
         exclude = ()
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
@@ -84,7 +84,7 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
         model = Department
         exclude = ()
 
-class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
+class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """
     author: casey dailey
     purpose: specify model and fields to include (here we include all)
@@ -101,7 +101,7 @@ class EmployeeTypeSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = EmployeeType
+        model = Employee
         exclude = ()
 
 
@@ -125,35 +125,40 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
         model = Customer
         exclude = ()
 
-class ComputerTypeSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        """
-        author: Kayla Brewer
-        purpose: extends the parent serializer class with validators 
-        specifying the model and fields to exclude (here we include all)
-        properties: model = specifies the model to be serialized
-                    exclude = specifies fields to be included (here we exclude none)
 
-        docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
-        """
-        model = ComputerType
-        exclude = ()
-        
-class ProductSerializer(serializers.HyperlinkedModelSerializer):
+class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """
         author: Nick Nash
         purpose: extends the parent serializer class with validators 
         specifying the model and fields to exclude (here we include all)
         properties: model = specifies the model to be serialized
-                    exclude = specifies fields to be included (here we exclude none)
-
+        exclude = specifies fields to be included (here we exclude none)
+        docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
+        """
+        model = Computer
+        exclude = ()
+        
+class ProductSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    author: Nick Nash
+    purpose: specify model and fields to include (here we include all)
+    args: serializers.HyperlinkedModelSerializer, see docs @ http://www.django-rest-framework.org/api-guide/serializers/#hyperlinkedmodelserializer 
+    uses hyperlinks to represent relationships, rather than primary keys.
+    """
+    class Meta:
+        """
+        author: Nick Nash
+        purpose: extends the parent serializer class with validators 
+        specifying the model and fields to exclude (here we include all)
+        properties: model = specifies the model to be serialized
+        exclude = specifies fields to be included (here we exclude none)
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
         model = Product
         exclude = ()
 
-class TrainingProgramsSerializer(serializers.HyperlinkedModelSerializer):
+class TrainingProgramSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         """
         author: Harper Frankstone
@@ -164,24 +169,26 @@ class TrainingProgramsSerializer(serializers.HyperlinkedModelSerializer):
 
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
-        model = TrainingPrograms
+        model = TrainingProgram
         exclude = ()
 
 class CustomerSupportSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    author: Nick Nash
+    purpose: specify model and fields to include (here we include all)
+    args: serializers.HyperlinkedModelSerializer, see docs @ http://www.django-rest-framework.org/api-guide/serializers/#hyperlinkedmodelserializer 
+    uses hyperlinks to represent relationships, rather than primary keys.
+    """
     class Meta:
         """
         author: Nick Nash
         purpose: extends the parent serializer class with validators 
         specifying the model and fields to exclude (here we include all)
         properties: model = specifies the model to be serialized
-                    exclude = specifies fields to be included (here we exclude none)
-
+        exclude = specifies fields to be included (here we exclude none)
         docs: http://www.django-rest-framework.org/api-guide/serializers/#serializer-inheritance 
         """
         model = CustomerSupport
-        exclude = ()
-        
 
-            
-            
-            
+        exclude = ()
+
