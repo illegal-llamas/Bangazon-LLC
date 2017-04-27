@@ -4,8 +4,7 @@
     "pk": 1,
     "fields": {
       "purchase_date": "01/02/11",
-      "decomission_date": "02/03/22",
-      "employee": 1
+      "decomission_date": "02/03/22"
     }
   },
   {
@@ -13,8 +12,7 @@
     "pk": 2,
     "fields": {
       "purchase_date": "01/02/12",
-      "decomission_date": "02/02/22",
-      "employee": 2
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -22,8 +20,7 @@
     "pk": 3,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 3
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -31,8 +28,7 @@
     "pk": 4,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 5
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -40,8 +36,7 @@
     "pk": 5,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 5
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -49,8 +44,7 @@
     "pk": 6,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 6
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -58,8 +52,7 @@
     "pk": 7,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 7
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -67,8 +60,7 @@
     "pk": 8,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 8
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -76,8 +68,7 @@
     "pk": 9,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 9
+      "decomission_date": "02/02/22"
     }
   },
   {
@@ -85,8 +76,7 @@
     "pk": 10,
     "fields": {
       "purchase_date": "01/01/11",
-      "decomission_date": "02/02/22",
-      "employee": 10
+      "decomission_date": "02/02/22"
     }
   }
 ]

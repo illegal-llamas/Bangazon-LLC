@@ -100,7 +100,6 @@ class Order(models.Model):
 
     customer = models.ForeignKey(Customer)
     payment_type = models.ForeignKey(CustomerPaymentType)
-    product_name = models.ForeignKey(Product)
 
 
 class Department(models.Model):
@@ -152,7 +151,6 @@ class Computer(models.Model):
     """
     purchase_date = models.CharField(max_length=50)
     decomission_date = models.CharField(max_length=50)
-    employee = models.ForeignKey(Employee, blank=True, null=True)
 
 
 class TrainingProgram(models.Model):
