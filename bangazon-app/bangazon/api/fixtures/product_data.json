@@ -1,0 +1,112 @@
+[
+  {
+    "model": "api.Product",
+    "pk": 1,
+    "fields": {
+      "product_type": "1",
+      "customer": "1",
+      "product_name": "Biology for Dumbys",
+      "price": "$30",
+      "description": "The best book for learning biology for slightly stupid folks."
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 2,
+    "fields": {
+      "product_type": "2",
+      "customer": "2",
+      "product_name": "Color Television Set",
+      "price": "$10",
+      "description": "You shouldn't waste your money on this. Buy a new TV and save yourself a headache."    
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 3,
+    "fields": {
+      "product_type": "3",
+      "customer": "3",
+      "product_name": "Soccer Cleats",
+      "price": "$120",
+      "description": "Signed by someone famous, but I don't know soccer players"
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 4,
+    "fields": {
+      "product_type": "4",
+      "customer": "4",
+      "product_name": "Chew Toy",
+      "price": "$5",
+      "description": "Squeaks so loud, you'll lose your mind!"
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 5,
+    "fields": {
+      "product_type": "5",
+      "customer": "5",
+      "product_name": "Mario Cart",
+      "price": "$35",
+      "description": "If you don't already know about this, you don't deserve it"
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 6,
+    "fields": {
+      "product_type": "6",
+      "customer": "6",
+      "product_name": "Wind Shield Wipers",
+      "price": "$50",
+      "description": "When it rains, they will wipe off water"
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 7,
+    "fields": {
+      "product_type": "7",
+      "customer": "7",
+      "product_name": "Adam's Twitch Shirt",
+      "price": "$3",
+      "description": "On average, worn once every 3-4 days"
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 8,
+    "fields": {
+      "product_type": "8",
+      "customer": "8",
+      "product_name": "Keith Richard's Guitar Case",
+      "price": "$300",
+      "description": "Try to get through airport security with this, I dare you.."
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 9,
+    "fields": {
+      "product_type": "9",
+      "customer": "9",
+      "product_name": "Potter's Wheel",
+      "price": "$20",
+      "description": "A lathe for shaping wet clay"
+    }
+  },
+  {
+    "model": "api.Product",
+    "pk": 10,
+    "fields": {
+      "product_type": "10",
+      "customer": "10",
+      "product_name": "Dean's Favorite Tent",
+      "price": "$7",
+      "description": "A little torn, but clearly lots of love"
+    }
+  }
+]
